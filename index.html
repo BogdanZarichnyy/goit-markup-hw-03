@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
         <link rel="stylesheet" href="styles/style.css" type="text/css">
     </head>
+
     <body class="body__general">
     <!--http://goit-markup-hw-03/-->
 
@@ -29,15 +30,15 @@
 
                         <nav class="header__navigation">
 
-                            <a class="header__navigation__logo" href="/goit-markup-hw-03">
+                            <a class="header__navigation__logo" href="./">
                                 <span class="header__navigation__logo__prefix">Web</span>Studio</a>
 
                             <ul class="header__navigation__list">
                                 <li class="header__navigation__list__item">
-                                    <a class="header__navigation__list__item__link" href="/goit-markup-hw-03">Студия</a>
+                                    <a class="header__navigation__list__item__link" href="./">Студия</a>
                                 </li>
                                 <li class="header__navigation__list__item">
-                                    <a class="header__navigation__list__item__link" href="/goit-markup-hw-03/portfolio.html">Портфолио</a>
+                                    <a class="header__navigation__list__item__link" href="./portfolio.html">Портфолио</a>
                                 </li>
                                 <li class="header__navigation__list__item">
                                     <a class="header__navigation__list__item__link" href="#">Контакты</a>
@@ -58,132 +59,123 @@
                 </div>
             </header>
 
+            <!--Заказы-->
+            <section class="section__order">
+                <!--Container - width 1200px-->
+                <div class="container__content">
+
+                    <div class="order__content">
+                        <h1 class="order__title">Эффективные решения для вашего бизнеса</h1>
+                        <button class="order__button" type="button">Заказать услугу</button>
+                    </div>
+
+                </div>
+            </section>
+
             <!--Контент-->
-            <main class="main__box">
+            <main class="main__content section">
+                <!--Container - width 1200px-->
+                <div class="container__content">
 
-                <!--Заказы-->
-                <div class="main__content">
-                    <!--Container - width 1200px-->
-                    <div class="container__content">
+                    <!--О нас-->
+                    <div class="main__about__us">
 
-                        <div class="main__order">
-                            <h1 class="main__order__title">Эффективные решения для вашего бизнеса</h1>
-                            <button class="main__order__button" type="button">Заказать услугу</button>
-                        </div>
+                        <h2 class="main__title"></h2>
 
-                    </div>
-                </div>
+                        <ul class="box__list">
+                            <li class="main__about__list__item">
+                                <h3 class="main__about__list__item__title">Внимание к деталям</h3>
+                                <p class="main__about__list__item__text">
+                                    Идейные соображения, а также начало повседневной работы по формированию позиции.
+                                </p>
+                            </li>
+                            <li class="main__about__list__item">
+                                <h3 class="main__about__list__item__title">Пунктуальность</h3>
+                                <p class="main__about__list__item__text">
+                                    Задача организации, особенно поддержка и своевременное обучение кадров на месте.
+                                </p>
+                            </li>
+                            <li class="main__about__list__item">
+                                <h3 class="main__about__list__item__title">Планирование</h3>
+                                <p class="main__about__list__item__text">
+                                    Равнозначным образом консультация в значительной степени обусловлена широким активом.
+                                </p>
+                            </li>
+                            <li class="main__about__list__item">
+                                <h3 class="main__about__list__item__title">Современные технологии</h3>
+                                <p class="main__about__list__item__text">
+                                    Значимость этих проблем настолько очевидна, что и реализация плановых заданий.
+                                </p>
+                            </li>
+                        </ul>
 
-                <!--О нас-->
-                <div class="main__about section">
-                    <!--Container - width 1200px-->
-                    <div class="container__content">
+                        <!--Чем мы занимаемся-->
+                        <div class="main__about__box">
 
-                        <!--О нас в деталях-->
-                        <div class="main__about__us">
+                            <h2 class="main__about__title__job">Чем мы занимаемся</h2>
 
-                            <div class="main__about__box">
-
-                                <h2 class="main__about__title"></h2>
-
-                                <ul class="main__about__list">
-                                    <li class="main__about__list__item">
-                                        <h3 class="main__about__list__item__title">Внимание к деталям</h3>
-                                        <p class="main__about__list__item__text">
-                                            Идейные соображения, а также начало повседневной работы по формированию позиции.
-                                        </p>
-                                    </li>
-                                    <li class="main__about__list__item">
-                                        <h3 class="main__about__list__item__title">Пунктуальность</h3>
-                                        <p class="main__about__list__item__text">
-                                            Задача организации, особенно поддержка и своевременное обучение кадров на месте.
-                                        </p>
-                                    </li>
-                                    <li class="main__about__list__item">
-                                        <h3 class="main__about__list__item__title">Планирование</h3>
-                                        <p class="main__about__list__item__text">
-                                            Равнозначным образом консультация в значительной степени обусловлена широким активом.
-                                        </p>
-                                    </li>
-                                    <li class="main__about__list__item">
-                                        <h3 class="main__about__list__item__title">Современные технологии</h3>
-                                        <p class="main__about__list__item__text">
-                                            Значимость этих проблем настолько очевидна, что и реализация плановых заданий.
-                                        </p>
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                            <!--Чем мы занимаемся-->
-                            <div class="main__about__box">
-
-                                <h2 class="main__about__title__job">Чем мы занимаемся</h2>
-
-                                <ul class="main__about__list">
-                                    <li class="main__about__list__item__box">
-                                        <img class="main__about__list__item__image" src="images/image1.jpg"
-                                             alt="images/image1.jpg - Печать на клавиатуре" title="Воплощаем ваши мечты">
-                                    </li>
-                                    <li class="main__about__list__item__box">
-                                        <img class="main__about__list__item__image" src="images/image2.jpg"
-                                             alt="images/image2.jpg - Использование смартфона" title="Поддерживаем вас на вашем пути">
-                                    </li>
-                                    <li class="main__about__list__item__box">
-                                        <img class="main__about__list__item__image" src="images/image3.jpg"
-                                             alt="images/image3.jpg - Использование планшета" title="Формируем стратегию вашего успеха">
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--Наша команда-->
-                <div class="main__team__box section">
-                    <!--Container - width 1200px-->
-                    <div class="container__content">
-
-                        <div class="main__team">
-
-                            <h2 class="main__team__title">Наша команда</h2>
-
-                            <ul class="main__team__list">
-                                <li class="main__team__list__item">
-                                    <img class="main__team__list__item__photo" src="images/photo1.jpg"
-                                         alt="images/photo1.jpg - Фото Игорь Демьяненко" title="Игорь Демьяненко">
-                                    <h3 class="main__team__list__item__name">Игорь Демьяненко</h3>
-                                    <p class="main__team__list__item__job">Product Designer</p>
+                            <ul class="box__list">
+                                <li class="main__about__list__item__job">
+                                    <img class="box__image" src="images/image1.jpg"
+                                         alt="images/image1.jpg - Печать на клавиатуре" title="Воплощаем ваши мечты">
                                 </li>
-                                <li class="main__team__list__item">
-                                    <img class="main__team__list__item__photo" src="images/photo2.jpg"
-                                         alt="images/photo2.jpg - Фото Ольга Репина" title="Ольга Репина">
-                                    <h3 class="main__team__list__item__name">Ольга Репина</h3>
-                                    <p class="main__team__list__item__job">Frontend Developer</p>
+                                <li class="main__about__list__item__job">
+                                    <img class="box__image" src="images/image2.jpg"
+                                         alt="images/image2.jpg - Использование смартфона" title="Поддерживаем вас на вашем пути">
                                 </li>
-                                <li class="main__team__list__item">
-                                    <img class="main__team__list__item__photo" src="images/photo3.jpg"
-                                         alt="images/photo3.jpg - Фото Николай Тарасов" title="Николай Тарасов">
-                                    <h3 class="main__team__list__item__name">Николай Тарасов</h3>
-                                    <p class="main__team__list__item__job">Marketing</p>
-                                </li>
-                                <li class="main__team__list__item">
-                                    <img class="main__team__list__item__photo" src="images/photo4.jpg"
-                                         alt="images/photo4.jpg - Фото Михаил Ермаков" title="Михаил Ермаков">
-                                    <h3 class="main__team__list__item__name">Михаил Ермаков</h3>
-                                    <p class="main__team__list__item__job">UI Designer</p>
+                                <li class="main__about__list__item__job">
+                                    <img class="box__image" src="images/image3.jpg"
+                                         alt="images/image3.jpg - Использование планшета" title="Формируем стратегию вашего успеха">
                                 </li>
                             </ul>
 
                         </div>
 
                     </div>
-                </div>
 
+                </div>
             </main>
+
+            <!--Наша команда-->
+            <section class="team__content section">
+                <!--Container - width 1200px-->
+                <div class="container__content">
+
+                    <div class="team__box">
+
+                        <h2 class="team__title">Наша команда</h2>
+
+                        <ul class="box__list">
+                            <li class="team__list__item">
+                                <img class="box__image" src="images/photo1.jpg"
+                                     alt="images/photo1.jpg - Фото Игорь Демьяненко" title="Игорь Демьяненко">
+                                <h3 class="team__list__item__name">Игорь Демьяненко</h3>
+                                <p class="team__list__item__job">Product Designer</p>
+                            </li>
+                            <li class="team__list__item">
+                                <img class="box__image" src="images/photo2.jpg"
+                                     alt="images/photo2.jpg - Фото Ольга Репина" title="Ольга Репина">
+                                <h3 class="team__list__item__name">Ольга Репина</h3>
+                                <p class="team__list__item__job">Frontend Developer</p>
+                            </li>
+                            <li class="team__list__item">
+                                <img class="box__image" src="images/photo3.jpg"
+                                     alt="images/photo3.jpg - Фото Николай Тарасов" title="Николай Тарасов">
+                                <h3 class="team__list__item__name">Николай Тарасов</h3>
+                                <p class="team__list__item__job">Marketing</p>
+                            </li>
+                            <li class="team__list__item">
+                                <img class="box__image" src="images/photo4.jpg"
+                                     alt="images/photo4.jpg - Фото Михаил Ермаков" title="Михаил Ермаков">
+                                <h3 class="team__list__item__name">Михаил Ермаков</h3>
+                                <p class="team__list__item__job">UI Designer</p>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </section>
 
             <!--Футер-->
             <footer class="footer__content">
@@ -194,7 +186,7 @@
 
                         <div class="footer__contact">
 
-                            <a class="header__navigation__logo footer__logo" href="/goit-markup-hw-03">
+                            <a class="header__navigation__logo footer__logo" href="./">
                                 <span class="header__navigation__logo__prefix">Web</span>Studio</a>
 
                             <address class="footer__address">
