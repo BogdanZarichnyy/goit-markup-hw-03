@@ -53,7 +53,7 @@ ul {
     padding: 0;
 }
 
-.body__general {
+.body-general {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 0;
@@ -66,19 +66,19 @@ ul {
     margin: 0 auto;
 }
 
-.container__content {
+.container-content {
     /*max-width: 1170px;*/
     max-width: 1200px;
     margin: 0 auto;
 }
 
 /*Хедер*/
-.header__content {
+.header-content {
     background-color: var(--content-color);
     border-bottom: 1px solid var(--border-header-color);
 }
 
-.header__box {
+.header-box {
     display: flex;
     height: 80px;
     padding: 0 15px;
@@ -86,12 +86,13 @@ ul {
     align-items: center;
 }
 
-.header__navigation {
+.header-navigation {
     display: inherit;
     column-gap: 93px;
 }
 
-.header__navigation__logo {
+/*Логотип*/
+.header-logo {
     display: inline-block;
     font-family: 'Oleo Script', sans-serif;
     font-style: normal;
@@ -103,29 +104,30 @@ ul {
     transition: all 0.5s;
 }
 
-.header__navigation__logo__prefix {
+.header-logo-prefix {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 31px;
     color: var(--general-color);
 }
 
-.header__navigation__logo:focus {
+.header-logo:focus {
     outline: none;
     transform: scale(1.15);
 }
 
-.header__navigation__logo:hover {
+.header-logo:hover {
     transform: scale(1.3);
 }
 
-.header__navigation__list {
+/*Навигация*/
+.navigation-list {
     display: flex;
     align-items: center;
     column-gap: 50px;
 }
 
-.header__navigation__list__item {
+.navigation-item {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -133,30 +135,34 @@ ul {
     letter-spacing: 0.02em;
 }
 
-.header__navigation__list__item__link {
+.navigation-link {
     font-weight: bold;
     color: var(--primary-text-color);
 }
 
-.header__navigation__list__item__link:focus {
+.current {
+    color: var(--general-color);
+}
+
+.navigation-link:focus {
     outline: none;
     color: var(--focus-color);
     cursor: pointer;
 }
 
-.header__navigation__list__item__link:hover {
+.navigation-link:hover {
     color: var(--general-color);
     cursor: pointer;
 }
 
-.header__contacts {
+.header-contacts {
     display: flex;
     align-items: center;
     column-gap: 50px;
 }
 
-.header__email,
-.header__telephone {
+.email-link,
+.telephone-link {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -165,24 +171,24 @@ ul {
     color: #757575;
 }
 
-.header__email:focus,
-.header__telephone:focus {
+.email-link:focus,
+.telephone-link:focus {
     outline: none;
     color: var(--focus-color);
 }
 
-.header__email:hover,
-.header__telephone:hover {
+.email-link:hover,
+.telephone-link:hover {
     font-weight: bold;
     color: var(--general-color);
 }
 
 /*Заказы*/
-.section__order {
+.section-order {
     background-color: var(--primary-section-fon);
 }
 
-.order__content {
+.order-content {
     display: flex;
     height: 600px;
     padding: 0 15px;
@@ -192,7 +198,7 @@ ul {
     row-gap: 30px;
 }
 
-.order__title {
+.order-title {
     margin: 0;
     max-width: 696px;
     font-style: normal;
@@ -205,7 +211,7 @@ ul {
     color: var(--content-color);
 }
 
-.order__button {
+.order-button {
     width: 200px;
     height: 50px;
     /*background: #2196F3;*/
@@ -230,13 +236,13 @@ ul {
     cursor: pointer;
 }
 
-.order__button:focus {
+.order-button:focus {
     outline: none;
     background: var(--focus-color);
     color: var(--content-color);
 }
 
-.order__button:active {
+.order-button:active {
     background:
         linear-gradient(
             var(--general-color),
@@ -254,7 +260,7 @@ ul {
 }
 
 /*Контент*/
-.main__content {
+.main-content {
     background-color: var(--content-color);
 }
 
@@ -262,16 +268,8 @@ ul {
     padding: 94px 0;
 }
 
-/*О нас*/
-.main__about__us {
-    display: flex;
-    padding: 0 15px;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 94px;
-}
 
-.main__title {
+.main-title {
     display: none;
     /*position: absolute;*/
     /*width: 1px;*/
@@ -285,19 +283,28 @@ ul {
     /*overflow: hidden;*/
 }
 
-.box__list {
+/*О нас*/
+.about-box {
+    display: flex;
+    padding: 0 15px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 94px;
+}
+
+.box-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    margin: 0;
+    /*margin: 0;*/
 }
 
-.main__about__list__item {
+.about-item {
     max-width: 270px;
 }
 
-.main__about__list__item__title {
+.about-item-title {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -306,7 +313,7 @@ ul {
     text-transform: uppercase;
 }
 
-.main__about__list__item__text {
+.about-item-text {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -317,8 +324,15 @@ ul {
 }
 
 /*Чем мы занимаемся*/
-.main__about__title__job {
-    margin: 0 0 50px;
+.job-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.job-title {
+    margin: 0;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -327,31 +341,31 @@ ul {
     letter-spacing: 0.03em;
 }
 
-.main__about__list__item__job {
+.job-item {
     max-width: 370px;
     cursor: pointer;
     transition: all 0.5s;
 }
 
-.main__about__list__item__job:hover {
+.job-item:hover {
     transform: scale(1.1);
 }
 
-.box__image {
+.box-image {
     display: block;
     width: 100%;
 }
 
 /*Наша команда*/
-.team__content {
+.team-content {
     background-color:var(--secondary-section-fon);
 }
 
-.team__box {
+.team-box {
     padding: 0 15px;
 }
 
-.team__title {
+.team-title {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -361,7 +375,7 @@ ul {
     margin: 0 auto 50px;
 }
 
-.team__list__item {
+.team-item {
     max-width: 270px;
     /*height: 368px;*/
     background-color: var(--content-color);
@@ -374,11 +388,11 @@ ul {
     transition: all 0.5s;
 }
 
-.team__list__item:hover {
+.team-item:hover {
     transform: scale(1.1);
 }
 
-.team__list__item__name {
+.team-item-name {
     margin: 30px auto 5px;
     font-style: normal;
     /*font-weight: 500;*/
@@ -389,7 +403,7 @@ ul {
     color: var(--primary-text-color);
 }
 
-.team__list__item__job {
+.team-item-title {
     margin: 5px auto 30px;
     font-style: normal;
     font-weight: 400;
@@ -401,7 +415,7 @@ ul {
 }
 
 /*Фильтр*/
-.main__filter__box {
+.filter-box {
     display: flex;
     padding: 0 15px;
     flex-direction: column;
@@ -409,19 +423,19 @@ ul {
     row-gap: 34px;
 }
 
-.main__filter__list {
+.filter-list {
     display: flex;
     justify-content: center;
     padding-bottom: 16px;
     gap: 8px;
 }
 
-.main__filter__list__item {
+.filter-item {
     display: flex;
     align-items: flex-start;
 }
 
-.main__filter__button {
+.filter-button {
     padding: 6px 22px;
     background:
         linear-gradient(
@@ -441,13 +455,13 @@ ul {
     cursor: pointer;
 }
 
-.main__filter__button:focus {
+.filter-button:focus {
     outline: none;
     background: var(--focus-color);
     color: var(--content-color);
 }
 
-.main__filter__button:active {
+.filter-button:active {
     background:
         linear-gradient(
             var(--general-color),
@@ -467,14 +481,14 @@ ul {
 }
 
 /*Постеры*/
-.main__poster__list {
+.poster-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
 }
 
-.main__poster__list__item {
+.poster-item {
     max-width: 370px;
     background-color: var(--content-color);
     /*border: 1px solid #EEEEEE;*/
@@ -483,17 +497,17 @@ ul {
     transition: all 0.5s;
 }
 
-.main__poster__list__item:hover {
+.poster-item:hover {
     transform: scale(1.1);
 }
 
-.main__poster__list__item__text {
+.poster-item-text {
     border-left: 1px solid var(--border-content-color);
     border-right: 1px solid var(--border-content-color);
     padding: 20px 23px 19px;
 }
 
-.main__poster__list__item__name {
+.poster-item-name {
     margin: 0 0 4px;
     font-style: normal;
     font-weight: 700;
@@ -503,7 +517,7 @@ ul {
     color: var(--primary-text-color);
 }
 
-.main__poster__list__item__category {
+.poster-item-category {
     margin: 0;
     font-style: normal;
     font-weight: 400;
@@ -514,11 +528,11 @@ ul {
 }
 
 /*Футер*/
-.footer__content {
+.footer-content {
     background-color: var(--primary-section-fon);
 }
 
-.footer__box {
+.footer-box {
     display: flex;
     height: 252px;
     padding: 0 15px;
@@ -526,42 +540,42 @@ ul {
     justify-content: space-between;
 }
 
-.footer__contact,
-.footer__address {
+.footer-contact,
+.footer-address {
     display: block;
 }
 
-.footer__logo {
+.footer-logo {
     margin: 0 0 20px;
 }
 
-.header__navigation__logo.footer__logo {
+.header-logo.footer-logo {
     display: inline-block;
     color: var(--content-color);
 }
 
-.header__navigation__logo.footer__logo:hover {
+.header-logo.footer-logo:hover {
     transform: scale(1.3);
 }
 
-.footer__contact__list {
+.footer-contact-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.footer__contact__list__item {
+.footer-contact-item {
     display: flex;
     /*align-items: flex-start;*/
     justify-content: flex-start;
 }
 
-.footer__contact__list__item +
-.footer__contact__list__item {
+.footer-contact-item +
+.footer-contact-item {
     margin-top: 9px;
 }
 
-.footer__address__link {
+.footer-address-link {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -570,31 +584,31 @@ ul {
     color: var(--content-color);
 }
 
-.footer__address__link:focus {
+.footer-address-link:focus {
     outline: none;
     color: var(--focus-color);
 }
 
-.footer__address__link:hover {
+.footer-address-link:hover {
     color: var(--general-color);
 }
 
-.header__email.footer__email,
-.header__telephone.footer__telephone {
+.email-link.footer-email,
+.telephone-link.footer-telephone {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--footer-text-color);
 }
 
-.header__email.footer__email:focus,
-.header__telephone.footer__telephone:focus {
+.email-link.footer-email:focus,
+.telephone-link.footer-telephone:focus {
     font-weight: bold;
     color: var(--focus-color);
 }
 
-.header__email.footer__email:hover,
-.header__telephone.footer__telephone:hover {
+.email-link.footer-email:hover,
+.telephone-link.footer-telephone:hover {
     font-weight: bold;
     color: var(--general-color);
 }
