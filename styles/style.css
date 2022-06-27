@@ -231,7 +231,7 @@ ul {
 
 .order-button {
     padding: 10px 32px;
-    background-color: var(--focus-color);
+    background: var(--focus-color);
     /*background:*/
     /*    linear-gradient(*/
     /*        var(--general-color),*/
@@ -261,7 +261,7 @@ ul {
 
 .order-button:active {
     outline: none;
-    background-color:
+    background:
             linear-gradient(var(--general-color),
             var(--gradient-color-1));
     box-shadow:
@@ -446,7 +446,7 @@ ul {
 
 .filter-button {
     padding: 6px 22px;
-    background-color:
+    background:
             linear-gradient(var(--secondary-section-fon),
             var(--gradient-color-2));
     border: 0;
@@ -465,7 +465,7 @@ ul {
     /*outline: none;*/
     box-shadow:
             0 4px 4px rgba(0, 0, 0, 0.15);
-    background-color: var(--focus-color);
+    background: var(--focus-color);
     color: var(--content-color);
 }
 
@@ -478,7 +478,7 @@ ul {
 }
 
 .filter-button:active {
-    background-color:
+    background:
             linear-gradient(var(--general-color),
             var(--gradient-color-1));
     box-shadow:
