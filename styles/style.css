@@ -238,7 +238,7 @@ ul {
     /*        var(--gradient-color-1)*/
     /*    );*/
     box-shadow:
-            0 4px 4px var(--main-shadow-button);
+        0 4px 4px var(--main-shadow-button);
     border: 0;
     border-radius: 4px;
     font-family: inherit;
@@ -255,25 +255,25 @@ ul {
     /*outline: none;*/
     /*background: var(--focus-color);*/
     background:
-            linear-gradient(var(--general-color),
+        linear-gradient(var(--general-color),
             var(--gradient-color-1));
 }
 
 .order-button:active {
     outline: none;
     background:
-            linear-gradient(var(--general-color),
+        linear-gradient(var(--general-color),
             var(--gradient-color-1));
     box-shadow:
-            inset 4px 4px 4px var(--main-shadow-button),
-            inset -4px 4px 4px var(--main-shadow-button),
-            inset 4px -4px 4px var(--main-shadow-button),
-            inset -4px -4px 4px var(--main-shadow-button);
+        inset 4px 4px 4px var(--main-shadow-button),
+        inset -4px 4px 4px var(--main-shadow-button),
+        inset 4px -4px 4px var(--main-shadow-button),
+        inset -4px -4px 4px var(--main-shadow-button);
     text-shadow:
-            4px 4px 4px var(--main-shadow-button),
-            -4px 4px 4px var(--main-shadow-button),
-            4px -4px 4px var(--main-shadow-button),
-            -4px -4px 4px var(--main-shadow-button);
+        4px 4px 4px var(--main-shadow-button),
+        -4px 4px 4px var(--main-shadow-button),
+        4px -4px 4px var(--main-shadow-button),
+        -4px -4px 4px var(--main-shadow-button);
 }
 
 /*Про нас*/
@@ -390,9 +390,9 @@ ul {
     max-width: 270px;
     background-color: var(--content-color);
     box-shadow:
-            0 1px 3px var(--box-shadow-1),
-            0 1px 1px var(--box-shadow-2),
-            0 2px 1px var(--box-shadow-3);
+        0 1px 3px var(--box-shadow-1),
+        0 1px 1px var(--box-shadow-2),
+        0 2px 1px var(--box-shadow-3);
     border-radius: 0 0 4px 4px;
     cursor: pointer;
     transition: all 0.5s;
@@ -447,7 +447,7 @@ ul {
 .filter-button {
     padding: 6px 22px;
     background:
-            linear-gradient(var(--secondary-section-fon),
+        linear-gradient(var(--secondary-section-fon),
             var(--gradient-color-2));
     border: 0;
     border-radius: 4px;
@@ -464,7 +464,7 @@ ul {
 .filter-button:focus {
     /*outline: none;*/
     box-shadow:
-            0 4px 4px rgba(0, 0, 0, 0.15);
+        0 4px 4px rgba(0, 0, 0, 0.15);
     background: var(--focus-color);
     color: var(--content-color);
 }
@@ -472,26 +472,26 @@ ul {
 .filter-button:hover {
     /*outline: none;*/
     background:
-            linear-gradient(var(--general-color),
+        linear-gradient(var(--general-color),
             var(--gradient-color-1));
     color: var(--content-color);
 }
 
 .filter-button:active {
     background:
-            linear-gradient(var(--general-color),
+        linear-gradient(var(--general-color),
             var(--gradient-color-1));
     box-shadow:
-            0 4px 4px rgba(0, 0, 0, 0.15),
-            inset 4px 4px 4px var(--main-shadow-button),
-            inset -4px 4px 4px var(--main-shadow-button),
-            inset 4px -4px 4px var(--main-shadow-button),
-            inset -4px -4px 4px var(--main-shadow-button);
+        0 4px 4px rgba(0, 0, 0, 0.15),
+        inset 4px 4px 4px var(--main-shadow-button),
+        inset -4px 4px 4px var(--main-shadow-button),
+        inset 4px -4px 4px var(--main-shadow-button),
+        inset -4px -4px 4px var(--main-shadow-button);
     text-shadow:
-            4px 4px 4px var(--main-shadow-button),
-            -4px 4px 4px var(--main-shadow-button),
-            4px -4px 4px var(--main-shadow-button),
-            -4px -4px 4px var(--main-shadow-button);
+        4px 4px 4px var(--main-shadow-button),
+        -4px 4px 4px var(--main-shadow-button),
+        4px -4px 4px var(--main-shadow-button),
+        -4px -4px 4px var(--main-shadow-button);
     color: var(--content-color);
 }
 
