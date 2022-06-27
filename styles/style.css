@@ -28,9 +28,13 @@
     --box-shadow-1: rgba(0, 0, 0, 0.12);
     --box-shadow-2: rgba(0, 0, 0, 0.14);
     --box-shadow-3: rgba(0, 0, 0, 0.2);
+    --box-shadow-4: rgba(0, 0, 0, 0.1);
+    --box-shadow-5: rgba(0, 0, 0, 0.8);
+    --box-shadow-6: rgba(0, 0, 0, 0.06);
+    --box-shadow-7: rgba(0, 0, 0, 0.16);
 }
 
-*,
+*, 
 *::before,
 *::after {
     margin: 0;
@@ -237,8 +241,6 @@ ul {
     /*        var(--general-color),*/
     /*        var(--gradient-color-1)*/
     /*    );*/
-    box-shadow:
-        0 4px 4px var(--main-shadow-button);
     border: 0;
     border-radius: 4px;
     font-family: inherit;
@@ -252,11 +254,13 @@ ul {
 
 .order-button:focus,
 .order-button:hover {
-    /*outline: none;*/
+    outline: none;
     /*background: var(--focus-color);*/
     background:
         linear-gradient(var(--general-color),
             var(--gradient-color-1));
+    box-shadow:
+        0 4px 4px var(--main-shadow-button);
 }
 
 .order-button:active {
@@ -265,7 +269,7 @@ ul {
         linear-gradient(var(--general-color),
             var(--gradient-color-1));
     box-shadow:
-        inset 4px 4px 4px var(--main-shadow-button),
+        inset 4px 4px 8px var(--main-shadow-button),
         inset -4px 4px 4px var(--main-shadow-button),
         inset 4px -4px 4px var(--main-shadow-button),
         inset -4px -4px 4px var(--main-shadow-button);
@@ -460,21 +464,31 @@ ul {
     cursor: pointer;
 }
 
-.cheked,
-.filter-button:focus {
-    /*outline: none;*/
-    box-shadow:
-        0 4px 4px rgba(0, 0, 0, 0.15);
+.cheked {
     background: var(--focus-color);
     color: var(--content-color);
 }
 
+.filter-button:focus {
+    outline: none;
+    background: var(--focus-color);
+    color: var(--content-color);
+    box-shadow:
+        0px 3px 1px var(--box-shadow-4),
+        0px 1px 2px var(--box-shadow-5),
+        0px 2px 2px var(--box-shadow-1);
+}
+
 .filter-button:hover {
-    /*outline: none;*/
+    outline: none;
     background:
         linear-gradient(var(--general-color),
             var(--gradient-color-1));
     color: var(--content-color);
+    box-shadow:
+        0px 3px 1px var(--box-shadow-4),
+        0px 1px 2px var(--box-shadow-5),
+        0px 2px 2px var(--box-shadow-1);
 }
 
 .filter-button:active {
@@ -482,7 +496,7 @@ ul {
         linear-gradient(var(--general-color),
             var(--gradient-color-1));
     box-shadow:
-        0 4px 4px rgba(0, 0, 0, 0.15),
+        0 4px 4px var(--main-shadow-button),
         inset 4px 4px 4px var(--main-shadow-button),
         inset -4px 4px 4px var(--main-shadow-button),
         inset 4px -4px 4px var(--main-shadow-button),
@@ -507,6 +521,14 @@ ul {
     max-width: 370px;
     background-color: var(--content-color);
     border-bottom: 1px solid var(--border-content-color);
+}
+
+.poster-item:hover {
+    box-shadow:
+        0 1px 1px var(--box-shadow-1),
+        0 4px 4px var(--box-shadow-6),
+        1px 4px 6px var(--box-shadow-7);
+    cursor: pointer;
 }
 
 .poster-item-text {
