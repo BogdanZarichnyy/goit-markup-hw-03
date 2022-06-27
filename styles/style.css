@@ -34,9 +34,6 @@
 *::before,
 *::after {
     margin: 0;
-    /*box-sizing: inherit;*/
-    /*-webkit-box-sizing: inherit;*/
-    /*-moz-box-sizing: inherit;*/
 }
 
 /*Головний шрифт*/
@@ -57,9 +54,9 @@ ul {
     padding: 0;
 }
 
-/* ДЗ №2 goit-markup-hw-02 */
+/* Фон сторінки */
 .body-general {
-    background: var(--page-fon);
+    background-color: var(--page-fon);
     color: var(--primary-text-color);
 }
 
@@ -109,6 +106,7 @@ ul {
 }
 
 .header-logo-prefix {
+    /* display: inline-block; */
     font-weight: 700;
     line-height: 1.2;
     color: var(--general-color);
@@ -191,7 +189,7 @@ ul {
 
 .section-title {
     display: none;
-    /*position: absolute;*/
+    /* position: absolute; */
     /*width: 1px;*/
     /*height: 1px;*/
     /*margin: -1px;*/
@@ -233,7 +231,7 @@ ul {
 
 .order-button {
     padding: 10px 32px;
-    background: var(--focus-color);
+    background-color: var(--focus-color);
     /*background:*/
     /*    linear-gradient(*/
     /*        var(--general-color),*/
@@ -263,7 +261,7 @@ ul {
 
 .order-button:active {
     outline: none;
-    background:
+    background-color:
             linear-gradient(var(--general-color),
             var(--gradient-color-1));
     box-shadow:
@@ -448,7 +446,7 @@ ul {
 
 .filter-button {
     padding: 6px 22px;
-    background:
+    background-color:
             linear-gradient(var(--secondary-section-fon),
             var(--gradient-color-2));
     border: 0;
@@ -467,7 +465,7 @@ ul {
     /*outline: none;*/
     box-shadow:
             0 4px 4px rgba(0, 0, 0, 0.15);
-    background: var(--focus-color);
+    background-color: var(--focus-color);
     color: var(--content-color);
 }
 
@@ -480,7 +478,7 @@ ul {
 }
 
 .filter-button:active {
-    background:
+    background-color:
             linear-gradient(var(--general-color),
             var(--gradient-color-1));
     box-shadow:
