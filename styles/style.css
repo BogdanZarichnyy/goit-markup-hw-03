@@ -95,6 +95,7 @@ ul {
 .header-navigation {
     display: inherit;
     column-gap: 93px;
+    align-items: center;
 }
 
 /*Логотип*/
@@ -128,14 +129,10 @@ ul {
 /*Навігація*/
 .navigation-list {
     display: flex;
-    align-items: center;
-    column-gap: 50px;
 }
 
-.navigation-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navigation-item + .navigation-item {
+    margin-left: 50px;
 }
 
 .navigation-link {
@@ -155,15 +152,9 @@ ul {
     color: var(--general-color);
 }
 
+/*Контакти*/
 .header-contacts {
     display: flex;
-    column-gap: 50px;
-}
-
-/*Контакти*/
-.contacts-item {
-    display: flex;
-    align-items: center;
 }
 
 .email-link,
@@ -189,20 +180,6 @@ ul {
 
 .section {
     padding: 94px 0;
-}
-
-.section-title {
-    display: none;
-    /* position: absolute; */
-    /*width: 1px;*/
-    /*height: 1px;*/
-    /*margin: -1px;*/
-    /*border: 0;*/
-    /*padding: 0;*/
-    /*white-space: nowrap;*/
-    /*clip-path: inset(100%);*/
-    /*clip: rect(0 0 0 0);*/
-    /*overflow: hidden;*/
 }
 
 /*Замовлення*/
@@ -292,42 +269,39 @@ ul {
 
 /*Заголовок для секції*/
 .about-us-title {
-    display: none;
-    /*position: absolute;*/
-    /*width: 1px;*/
-    /*height: 1px;*/
-    /*margin: -1px;*/
-    /*border: 0;*/
-    /*padding: 0;*/
-    /*white-space: nowrap;*/
-    /*clip-path: inset(100%);*/
-    /*clip: rect(0 0 0 0);*/
-    /*overflow: hidden;*/
+    /*display: none;*/
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /*Наші цілі*/
-.about-us-list {
+.box-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
 }
 
 .about-item {
     max-width: 270px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
 }
 
-.about-item-title {
+.about-title {
+    margin-bottom: 10px;
     font-size: inherit;
     line-height: inherit;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
-.about-item-text {
+.about-text {
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -340,8 +314,10 @@ ul {
 }
 
 /*Обгортка для секції Чим ми займаємося*/
-.our-work-box {
+/*Обгортка для секції Наша команда*/
+.work-box {
     display: flex;
+    padding: 0 15px;
     flex-direction: column;
     align-items: center;
     row-gap: 50px;
@@ -374,15 +350,6 @@ ul {
     background-color: var(--secondary-section-fon);
 }
 
-/*Обгортка для секції Наша команда*/
-.team-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 50px;
-    padding: 0 15px;
-}
-
 .team-title {
     font-size: 36px;
     line-height: 1.16;
@@ -406,8 +373,8 @@ ul {
     transform: scale(1.1);
 }
 
-.team-item-name {
-    margin: 30px auto 5px;
+.team-name {
+    margin: 30px 0 5px;
     text-align: center;
     font-size: 16px;
     line-height: 1.19;
@@ -415,20 +382,16 @@ ul {
     color: var(--primary-text-color);
 }
 
-.team-item-title {
-    margin: 5px auto 30px;
-    text-align: center;
+.name-job {
+    margin: 5px 0 30px;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
 
 /*Секція постерів*/
 
-/*Обгортка для фільтру*/
-.filter-box {
+/*Обгортка для постерів*/
+.poster-box {
     display: flex;
     padding: 0 15px;
     flex-direction: column;
@@ -436,16 +399,38 @@ ul {
     row-gap: 34px;
 }
 
+.section-title {
+    /* display: none; */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /*Фільтр*/
 .filter-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     padding-bottom: 16px;
-    gap: 8px;
+    row-gap: 15px;
 }
 
-.filter-item {
-    display: flex;
+.filter-item:first-child {
+    margin-right: 8px;
+}
+
+.filter-item + .filter-item{
+    margin-right: 8px;
+}
+
+.filter-item:last-child {
+    margin-right: 0;
 }
 
 .filter-button {
@@ -531,13 +516,13 @@ ul {
     cursor: pointer;
 }
 
-.poster-item-text {
+.poster-text {
     border-left: 1px solid var(--border-content-color);
     border-right: 1px solid var(--border-content-color);
     padding: 20px 23px 19px;
 }
 
-.poster-item-name {
+.poster-name {
     margin: 0 0 4px;
     font-size: 18px;
     line-height: 2;
@@ -545,7 +530,7 @@ ul {
     color: var(--primary-text-color);
 }
 
-.poster-item-category {
+.poster-category {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
@@ -564,38 +549,33 @@ ul {
     height: 252px;
     padding: 0 15px;
     align-items: center;
-    justify-content: space-between;
 }
 
 /*Блок для логотипу та адреси футера*/
-.footer-contact,
-.footer-address {
+.footer-contact {
     display: block;
 }
 
 /*Логотип футера*/
 .footer-logo {
-    margin-bottom: 20px;
-}
-
-.header-logo.footer-logo {
-    display: inline-block;
     color: var(--content-color);
 }
 
-.header-logo.footer-logo:hover {
+.footer-logo:hover {
     transform: scale(1.3);
+}
+
+.footer-logo + .footer-address {
+    margin-top: 20px;
 }
 
 .footer-contact-list {
     display: flex;
     flex-direction: column;
-    row-gap: 9px;
 }
 
-.footer-contact-item {
-    display: flex;
-    align-items: center;
+.footer-contact-item + .footer-contact-item {
+    margin-top: 9px;
 }
 
 .footer-address-link,
