@@ -24,6 +24,7 @@
     --gradient-color-2: #a9a9ad;
 
     /*Кольори тіней*/
+    --shadow-button: rgba(0, 0, 0, 0.25);
     --main-shadow-button: rgba(0, 0, 0, 0.15);
     --box-shadow-1: rgba(0, 0, 0, 0.12);
     --box-shadow-2: rgba(0, 0, 0, 0.14);
@@ -78,6 +79,7 @@ ul {
 
 /*Хедер*/
 .header-content {
+    height: 80px;
     background-color: var(--content-color);
     border-bottom: 1px solid var(--border-header-color);
 }
@@ -85,18 +87,11 @@ ul {
 /*Обгортка для хедеру*/
 .header-box {
     display: flex;
-    height: 80px;
     padding: 0 15px;
-    justify-content: space-between;
     align-items: center;
 }
 
 /*Блок навігації*/
-.header-navigation {
-    display: inherit;
-    column-gap: 93px;
-    align-items: center;
-}
 
 /*Логотип*/
 .header-logo {
@@ -127,8 +122,18 @@ ul {
 }
 
 /*Навігація*/
+.header-navigation {
+    display: inherit;
+}
+
 .navigation-list {
     display: flex;
+    margin-left: 93px;
+}
+
+.navigation-item {
+    display: block;
+    padding: 32px 0;
 }
 
 .navigation-item + .navigation-item {
@@ -155,6 +160,7 @@ ul {
 /*Контакти*/
 .header-contacts {
     display: flex;
+    margin-left: auto;
 }
 
 .email-link,
@@ -184,28 +190,23 @@ ul {
 
 /*Замовлення*/
 .section-order {
+    /* height: 600px; */
     background-color: var(--primary-section-fon);
 }
 
 /*Обгортка для секції замовлень*/
 .order-content {
-    display: flex;
-    height: 600px;
-    padding: 0 15px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 30px;
+    padding: 200px 15px;
+    text-align: center;
 }
 
 .order-title {
-    margin: 0;
+    margin: 0 auto 30px;
     max-width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-align: center;
     text-transform: uppercase;
     color: var(--content-color);
 }
@@ -213,11 +214,6 @@ ul {
 .order-button {
     padding: 10px 32px;
     background: var(--focus-color);
-    /*background:*/
-    /*    linear-gradient(*/
-    /*        var(--general-color),*/
-    /*        var(--gradient-color-1)*/
-    /*    );*/
     border: 0;
     border-radius: 4px;
     font-family: inherit;
@@ -226,6 +222,8 @@ ul {
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--content-color);
+    box-shadow:
+        0 4px 4px var(--shadow-button);
     cursor: pointer;
 }
 
@@ -421,16 +419,8 @@ ul {
     row-gap: 15px;
 }
 
-.filter-item:first-child {
+.filter-item:not(:last-child) {
     margin-right: 8px;
-}
-
-.filter-item + .filter-item{
-    margin-right: 8px;
-}
-
-.filter-item:last-child {
-    margin-right: 0;
 }
 
 .filter-button {
@@ -499,11 +489,11 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
 }
 
 .poster-item {
-    max-width: 370px;
+    /* max-width: 370px; */
+    width: calc((100% - 60px) / 3);
     background-color: var(--content-color);
     border-bottom: 1px solid var(--border-content-color);
 }
