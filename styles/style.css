@@ -190,7 +190,7 @@ ul {
 
 /*Замовлення*/
 .section-order {
-    /* height: 600px; */
+    height: 600px;
     background-color: var(--primary-section-fon);
 }
 
@@ -213,7 +213,7 @@ ul {
 
 .order-button {
     padding: 10px 32px;
-    background: var(--focus-color);
+    background-color: var(--focus-color);
     border: 0;
     border-radius: 4px;
     font-family: inherit;
@@ -231,7 +231,7 @@ ul {
 .order-button:hover {
     outline: none;
     /*background: var(--focus-color);*/
-    background:
+    background-image:
         linear-gradient(var(--general-color),
             var(--gradient-color-1));
     box-shadow:
@@ -240,7 +240,7 @@ ul {
 
 .order-button:active {
     outline: none;
-    background:
+    background-image:
         linear-gradient(var(--general-color),
             var(--gradient-color-1));
     box-shadow:
@@ -425,7 +425,7 @@ ul {
 
 .filter-button {
     padding: 6px 22px;
-    background:
+    background-image:
         linear-gradient(var(--secondary-section-fon),
             var(--gradient-color-2));
     border: 0;
@@ -456,7 +456,7 @@ ul {
 
 .filter-button:hover {
     outline: none;
-    background:
+    background-image:
         linear-gradient(var(--general-color),
             var(--gradient-color-1));
     color: var(--content-color);
@@ -467,7 +467,7 @@ ul {
 }
 
 .filter-button:active {
-    background:
+    background-image:
         linear-gradient(var(--general-color),
             var(--gradient-color-1));
     box-shadow:
