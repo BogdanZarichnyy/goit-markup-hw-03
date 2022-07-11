@@ -79,7 +79,8 @@ ul {
 
 /*Хедер*/
 .header-content {
-    height: 80px;
+    /* height: 80px; */
+    box-sizing: inherit;
     background-color: var(--content-color);
     border-bottom: 1px solid var(--border-header-color);
 }
@@ -92,6 +93,10 @@ ul {
 }
 
 /*Блок навігації*/
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
 
 /*Логотип*/
 .header-logo {
@@ -122,10 +127,6 @@ ul {
 }
 
 /*Навігація*/
-.header-navigation {
-    display: inherit;
-}
-
 .navigation-list {
     display: flex;
     margin-left: 93px;
@@ -160,6 +161,7 @@ ul {
 /*Контакти*/
 .header-contacts {
     display: flex;
+    /* align-items: center; */
     margin-left: auto;
 }
 
@@ -184,13 +186,9 @@ ul {
     background-color: var(--content-color);
 }
 
-.section {
-    padding: 94px 0;
-}
-
 /*Замовлення*/
 .section-order {
-    height: 600px;
+    /* height: 600px; */
     background-color: var(--primary-section-fon);
 }
 
@@ -229,7 +227,7 @@ ul {
 
 .order-button:focus,
 .order-button:hover {
-    outline: none;
+    /* outline: none; */
     /*background: var(--focus-color);*/
     background-image:
         linear-gradient(var(--general-color),
@@ -256,13 +254,16 @@ ul {
 }
 
 /*Про нас*/
+.section {
+    padding: 94px 0;
+}
 
 /*Обгортка для секції Про нас*/
 .about-us-box {
-    display: flex;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
     padding: 0 15px;
-    flex-direction: column;
-    align-items: center;
 }
 
 /*Заголовок для секції*/
@@ -334,12 +335,6 @@ ul {
 .work-item {
     max-width: 370px;
     margin: 15px;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-
-.work-item:hover {
-    transform: scale(1.1);
 }
 
 .box-image {
@@ -369,12 +364,6 @@ ul {
         0 1px 1px var(--box-shadow-2),
         0 2px 1px var(--box-shadow-3);
     border-radius: 0 0 4px 4px;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-
-.team-item:hover {
-    transform: scale(1.1);
 }
 
 .team-name {
@@ -453,7 +442,7 @@ ul {
 }
 
 .filter-button:focus {
-    outline: none;
+    /* outline: none; */
     background: var(--focus-color);
     color: var(--content-color);
     box-shadow:
@@ -463,7 +452,6 @@ ul {
 }
 
 .filter-button:hover {
-    outline: none;
     background-image:
         linear-gradient(var(--general-color),
             var(--gradient-color-1));
