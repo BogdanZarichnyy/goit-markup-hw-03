@@ -106,13 +106,7 @@ body {
     border-bottom: 1px solid var(--border-header-color);
 }
 
-/*Обгортка для хедеру*/
-.header-box {
-    display: flex;
-    align-items: center;
-}
-
-/*Блок навігації*/
+/*Обгортка для хедеру та блок навігації*/
 .header-navigation {
     display: flex;
     align-items: center;
@@ -343,15 +337,6 @@ body {
     background-color: var(--secondary-section-fon);
 }
 
-/*Заголовок для секції*/
-.team-title {
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-
 /*Кадровий апарат*/
 .team-item {
     max-width: 270px;
@@ -436,6 +421,7 @@ body {
     margin: 15px;
     background-color: var(--content-color);
     border-bottom: 1px solid var(--border-content-color);
+    cursor: pointer;
 }
 
 .poster-item:hover {
@@ -443,7 +429,6 @@ body {
         0 1px 1px var(--box-shadow-1),
         0 4px 4px var(--box-shadow-6),
         1px 4px 6px var(--box-shadow-7);
-    cursor: pointer;
 }
 
 .poster-text {
