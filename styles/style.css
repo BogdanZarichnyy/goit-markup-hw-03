@@ -1,6 +1,5 @@
 :root {
     /*Кольори для фону секцій*/
-    --page-fon: #E5E5E5;
     --primary-section-fon: #2F303A;
     --secondary-section-fon: #F5F4FA;
 
@@ -89,7 +88,7 @@ body {
 
 /*Фон сторінки*/
 .body-general {
-    background-color: var(--page-fon);
+    background-color: var(--content-color);
     color: var(--primary-text-color);
 }
 
@@ -198,7 +197,7 @@ body {
 
 /*Контент*/
 .main-content {
-    background-color: var(--content-color);
+    background-color: inherit;
 }
 
 .section {
