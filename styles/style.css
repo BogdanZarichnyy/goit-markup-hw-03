@@ -208,7 +208,7 @@ body {
 
 .order-title {
     margin: 0 auto 30px;
-    max-width: 693px;
+    max-width: 600px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -350,7 +350,8 @@ body {
 }
 
 .team-name {
-    margin: 30px auto 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     text-align: center;
     font-size: 16px;
     line-height: 1.19;
@@ -359,7 +360,8 @@ body {
 }
 
 .name-job {
-    margin: 0 auto 30px;
+    padding-top: 0;
+    padding-bottom: 30px;
     font-weight: 400;
     color: var(--secondary-text-color);
 }
